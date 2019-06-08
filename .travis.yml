@@ -4,7 +4,7 @@ dotnet: 2.1
 script:
   - dotnet tool install --global dotnet-sonarscanner
   - dotnet restore
-  - dotnet test SimplePrefixTests/SimplePrefixTests.csproj /p:CollectCoverage=true /
+  - dotnet test SimplePrefixTests/SimplePrefixTests.csproj /p:CollectCoverage=true /p:CoverletOutputFormat=opencover
   - dotnet sonarscanner begin /k:"pichlermarc_SimplePrefix" /o:"pichlermarc-github" /d:sonar.host.url="https://sonarcloud.io" /d:sonar.login="$SONAR_TOKEN" /d:sonar.cs.opencover.reportsPaths="SimplePrefixTests/coverage.opencover.xml"
   - dotnet build
   - dotnet sonarscanner end /d:sonar.login="$SONAR_TOKEN"
