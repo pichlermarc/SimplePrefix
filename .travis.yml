@@ -1,10 +1,17 @@
 language: csharp
 mono: none
 dotnet: 2.1
-script:
+install:
   - dotnet tool install --global dotnet-sonarscanner
   - dotnet restore
+script:
   - dotnet test SimplePrefixTests/SimplePrefixTests.csproj /p:CollectCoverage=true /p:CoverletOutputFormat=opencover
   - ~/.dotnet/tools/dotnet-sonarscanner begin /k:"pichlermarc_SimplePrefix" /o:"pichlermarc-github" /d:sonar.host.url="https://sonarcloud.io" /d:sonar.login="$SONAR_TOKEN" /d:sonar.cs.opencover.reportsPaths="SimplePrefixTests/coverage.opencover.xml"
   - dotnet build
   - ~/.dotnet/tools/dotnet-sonarscanner end /d:sonar.login="$SONAR_TOKEN"
+deploy:
+  skip_cleanup: true
+  provider: script
+  script: dotnet pack -p:Configuration=Release && dotnet nuget push SimplePrefix/bin/Release -k $NUGET_API_KEY -s https://api.nuget.org/v3/index.json
+  on:
+    branch: master
