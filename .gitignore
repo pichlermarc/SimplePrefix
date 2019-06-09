@@ -3,6 +3,8 @@
 
 .idea
 **.user
+**.opencover.xml
+**.sonarqube
 
 # User-specific stuff
 .idea/**/workspace.xml
