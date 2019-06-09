@@ -3,6 +3,16 @@
     <PropertyGroup>
         <TargetFramework>netcoreapp2.1</TargetFramework>
         <LangVersion>7.2</LangVersion>
+        <PackageVersion>0.0.2</PackageVersion>
+        <Title>SimplePrefix</Title>
+        <Authors>Marc Pichler</Authors>
+        <Description>A library for SI- and IEC-prefix conversion</Description>
+        <Copyright>Marc Pichler</Copyright>
+        <PackageProjectUrl>https://github.com/pichlermarc/SimplePrefix</PackageProjectUrl>
+        <Licencse>MIT</Licencse>
+        <RepositoryUrl>https://github.com/pichlermarc/SimplePrefix</RepositoryUrl>
+        <RepositoryType>git</RepositoryType>
+        <PackageTags>Prefix SI IEC units conversion</PackageTags>
     </PropertyGroup>
 
 </Project>

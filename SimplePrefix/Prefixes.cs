@@ -4,7 +4,7 @@ using SimplePrefix.PrefixTypes;
 namespace SimplePrefix
 {
     /// <summary>
-    /// Offers a more simpler syntax compared to using the <see cref="Prefix"/>, <see cref="SI"/>, and <see cref="IEC"/> classes on their own.
+    /// Offers a simpler syntax compared to using the <see cref="Prefix"/>, <see cref="SI"/>, and <see cref="IEC"/> classes on their own.
     /// </summary>
     public static class Prefixes
     {
