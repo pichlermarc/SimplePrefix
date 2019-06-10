@@ -1,4 +1,5 @@
 # SimplePrefix
+[![Build Status](https://travis-ci.org/pichlermarc/SimplePrefix.svg?branch=master)](https://travis-ci.org/pichlermarc/SimplePrefix) [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=pichlermarc_SimplePrefix&metric=alert_status)](https://sonarcloud.io/dashboard?id=pichlermarc_SimplePrefix)
 
 ***A .NET Core 2.1 Library for converting numbers from and to SI or IEC prefixed representation.***
 
