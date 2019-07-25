@@ -1,9 +1,9 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
-        <TargetFramework>netcoreapp2.1</TargetFramework>
+        <TargetFramework>netstandard2.0</TargetFramework>
         <LangVersion>7.2</LangVersion>
-        <PackageVersion>0.0.3</PackageVersion>
+        <PackageVersion>0.1.0</PackageVersion>
         <Title>SimplePrefix</Title>
         <Authors>Marc Pichler</Authors>
         <Description>A library for SI- and IEC-prefix conversion</Description>
